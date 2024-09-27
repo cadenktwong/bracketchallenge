@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRACKET CHALLENGE 2.0</title>
+    <link rel="stylesheet" href="style2.0.css">
+</head>
+
+
+<body>
+    <div class="bracket">
+        <a href="#" id="resetBracket" onclick="resetBracket()">Reset Bracket</a>
+        <div class="round1">
+            <h3>Round 1</h3>
+            <div class="match" data-match-id="1">
+                <div class="team" data-team-id="1">J. Sinner [1]</div>
+                <div class="team" data-team-id="2">M. McDonald</div>
+            </div>
+            <div class="match" data-match-id="2">
+                <div class="team" data-team-id="3">E. Spirrizzi</div>
+                <div class="team" data-team-id="4">A. Michelsen</div>
+            </div>
+            <div class="match" data-match-id="3">
+                <div class="team" data-team-id="5">M. Bellucci</div>
+                <div class="team" data-team-id="6">S. Wawrinka</div>
+            </div>
+            <div class="match" data-match-id="4">
+                <div class="team" data-team-id="7">C. O'Connell</div>
+                <div class="team" data-team-id="8">N. Jarry [26]</div>
+            </div>
+            <div class="match" data-match-id="5">
+                <div class="team" data-team-id="9">A. Fils [24]</div>
+                <div class="team" data-team-id="10">L. Tien</div>
+            </div>
+            <div class="match" data-match-id="6">
+                <div class="team" data-team-id="11">J. Munar</div>
+                <div class="team" data-team-id="12">G. Diallo</div>
+            </div>
+            <div class="match" data-match-id="7">
+                <div class="team" data-team-id="13">M. Purcell</div>
+                <div class="team" data-team-id="14">A. Vukic</div>
+            </div>
+            <div class="match" data-match-id="8">
+                <div class="team" data-team-id="15">L. Sonego</div>
+                <div class="team" data-team-id="16">T. Paul [14]</div>
+            </div>
+            <div class="match" data-match-id="9">
+                <div class="team" data-team-id="17">S. Tsitsipas [11]</div>
+                <div class="team" data-team-id="18">T. Kokkinakis</div>
+            </div>
+
+            <div class="match" data-match-id="10">
+                <div class="team" data-team-id="19">N. Borges</div>
+                <div class="team" data-match-id="20">F. Coria</div>
+            </div>
+
+            <div class="match" data-match-id="11">
+                <div class="team" data-team-id="21">T. Schoolkate</div>
+                <div class="team" data-team-id="22">T. Daniel</div>
+            </div>
+
+            <div class="match" data-match-id="12">
+                <div class="team" data-team-id="23">J. Mensik</div>
+                <div class="team" data-team-id="24">F. Auger-Alliasime [19]</div>
+            </div>
+
+            <div class="match" data-match-id="13">
+                <div class="team" data-team-id="25">F. Cobolli [31]</div>
+                <div class="team" data-team-id="26">J. Duckworth</div>
+            </div>
+
+            <div class="match" data-match-id="14">
+                <div class="team" data-team-id="27">Z. Bergs</div>
+                <div class="team" data-team-id="28">P. Kotov</div>
+            </div>
+
+            <div class="match" data-match-id="15">
+                <div class="team" data-team-id="29">F. Marozsan</div>
+                <div class="team" data-team-id="30">H. Medjedovic</div>
+            </div>
+
+            <div class="match" data-match-id="16">
+                <div class="team" data-team-id="31">D. Lajovic</div>
+                <div class="team" data-team-id="32">D. Medvedev [5]</div>
+            </div>
+
+            <div class="match" data-match-id="17">
+                <div class="team" data-team-id="33">C. Alcaraz [3]</div>
+                <div class="team" data-team-id="34">L. Tu</div>
+            </div>
+
+            <div class="match" data-match-id="18">
+                <div class="team" data-team-id="35">D. Shapovalov</div>
+                <div class="team" data-team-id="36">D. van de Zandschulp</div>
+            </div>
+
+            <div class="match" data-match-id="19">
+                <div class="team" data-team-id="37">F. Diaz Acosta</div>
+                <div class="team" data-team-id="38">H. Gaston</div>
+            </div>
+
+            <div class="match" data-match-id="20">
+                <div class="team" data-team-id="39">Z. Zhang</div>
+                <div class="team" data-team-id="40">J. Draper [25]</div>
+            </div>
+
+            <div class="match" data-match-id="21">
+                <div class="team" data-team-id="41">A. Tabilo [22]</div>
+                <div class="team" data-team-id="42">D. Goffin</div>
+            </div>
+
+            <div class="match" data-match-id="22">
+                <div class="team" data-team-id="43">B. Coric</div>
+                <div class="team" data-team-id="44">A. Mannarino</div>
+            </div>
+
+            <div class="match" data-match-id="23">
+                <div class="team" data-team-id="45">F. Fognini</div>
+                <div class="team" data-team-id="46">T. Machac</div>
+            </div>
+
+            <div class="match" data-match-id="24">
+                <div class="team" data-team-id="47">C. Moutet</div>
+                <div class="team" data-team-id="48">S. Korda [16]</div>
+            </div>
+
+            <div class="match" data-match-id="25">
+                <div class="team" data-team-id="49">A. De Minaur [10]</div>
+                <div class="team" data-team-id="50">M. Giron</div>
+            </div>
+
+            <div class="match" data-match-id="26">
+                <div class="team" data-team-id="51">O. Virtanen</div>
+                <div class="team" data-team-id="52">Q. Halys</div>
+            </div>
+
+            <div class="match" data-match-id="27">
+                <div class="team" data-team-id="53">M. Navone</div>
+                <div class="team" data-team-id="54"> D. Altmaier</div>
+            </div>
+
+            <div class="match" data-match-id="28">
+                <div class="team" data-team-id="55">D. Evans</div>
+                <div class="team" data-team-id="56">K. Khachanov [23]</div>
+            </div>
+
+            <div class="match" data-match-id="29">
+                <div class="team" data-team-id="57">M. Arnaldi [30]</div>
+                <div class="team" data-team-id="58">Z. Svajda</div>
+            </div>
+
+            <div class="match" data-match-id="30">
+                <div class="team" data-team-id="59">M. Forbes</div>
+                <div class="team" data-team-id="60">R. Safiullin</div>
+            </div>
+
+            <div class="match" data-match-id="31">
+                <div class="team" data-team-id="61">C. Lestienne</div>
+                <div class="team" data-team-id="62">J. Thompson</div>
+            </div>
+
+            <div class="match" data-match-id="32">
+                <div class="team" data-team-id="63">T. Skatov</div>
+                <div class="team" data-team-id="64">H. Hurkacz [7]</div>
+            </div>
+
+            <div class="match" data-match-id="33">
+                <div class="team" data-team-id="65">C. Ruud [8]</div>
+                <div class="team" data-team-id="66">Y. Bu</div>
+            </div>
+
+            <div class="match" data-match-id="34">
+                <div class="team" data-team-id="67">G. Monfils</div>
+                <div class="team" data-team-id="68">D. Schwartzman</div>
+            </div>
+
+            <div class="match" data-match-id="35">
+                <div class="team" data-team-id="69">J. Choinski</div>
+                <div class="team" data-team-id="70">R. Carballes Baena</div>
+            </div>
+
+            <div class="match" data-match-id="36">
+                <div class="team" data-team-id="71">J. Shang</div>
+                <div class="team" data-team-id="72">A. Bublik [27]</div>
+            </div>
+
+            <div class="match" data-match-id="37">
+                <div class="team" data-team-id="73">U. Humbert [17]</div>
+                <div class="team" data-team-id="74">T. Monteiro</div>
+            </div>
+
+            <div class="match" data-match-id="38">
+                <div class="team" data-team-id="75">D. Stricker</div>
+                <div class="team" data-team-id="76">F. Comesana</div>
+            </div>
+
+            <div class="match" data-match-id="39">
+                <div class="team" data-team-id="77">A. Ramos-Vinolas</div>
+                <div class="team" data-team-id="78">M. Berrettini</div>
+            </div>
+
+            <div class="match" data-match-id="40">
+                <div class="team" data-team-id="79">C. Ugo Carabelli</div>
+                <div class="team" data-team-id="80">T. Fritz [12]</div>
+            </div>
+
+            <div class="match" data-match-id="41">
+                <div class="team" data-team-id="81">H. Rune [15]</div>
+                <div class="team" data-team-id="82">B. Nakashima</div>
+            </div>
+
+            <div class="match" data-match-id="42">
+                <div class="team" data-team-id="83">A. Cazaux</div>
+                <div class="team" data-team-id="84">P. Carreno Busta</div>
+            </div>
+
+            <div class="match" data-match-id="43">
+                <div class="team" data-team-id="85">Y. Nishioka</div>
+                <div class="team" data-team-id="86">M. Kecmanovic</div>
+            </div>
+
+            <div class="match" data-match-id="44">
+                <div class="team" data-team-id="87">R. Opelka</div>
+                <div class="team" data-team-id="88">L. Musetti [18]</div>
+            </div>
+
+            <div class="match" data-match-id="45">
+                <div class="team" data-team-id="89">F. Cerundolo [29]</div>
+                <div class="team" data-team-id="90">S. Ofner</div>
+            </div>
+
+            <div class="match" data-match-id="46">
+                <div class="team" data-team-id="91">F. Mpetshi Perricard</div>
+                <div class="team" data-team-id="92">T. Etcheverry</div>
+            </div>
+
+            <div class="match" data-match-id="47">
+                <div class="team" data-team-id="93">A. Muller</div>
+                <div class="team" data-team-id="94">A. Walton</div>
+            </div>
+
+            <div class="match" data-match-id="48">
+                <div class="team" data-team-id="95">E. Ruusuvuori</div>
+                <div class="team" data-team-id="96">A. Zverev [4]</div>
+            </div>
+
+            <div class="match" data-match-id="49">
+                <div class="team" data-team-id="97">A. Rublev [6]</div>
+                <div class="team" data-team-id="98">T. Seyboth Wild</div>
+            </div>
+
+            <div class="match" data-match-id="50">
+                <div class="team" data-team-id="99">C. Eubanks</div>
+                <div class="team" data-team-id="100">A. Rinderknech</div>
+            </div>
+
+            <div class="match" data-match-id="51">
+                <div class="team" data-team-id="101">H. Grenier</div>
+                <div class="team" data-team-id="102">M. Kreuger</div>
+            </div>
+
+            <div class="match" data-match-id="52">
+                <div class="team" data-team-id="103">M. Fucsovics</div>
+                <div class="team" data-team-id="104">J. Lehecka [32]</div>
+            </div>
+
+            <div class="match" data-match-id="53">
+                <div class="team" data-team-id="105">S. Baez [21]</div>
+                <div class="team" data-team-id="106">L. Darderi</div>
+            </div>
+
+            <div class="match" data-match-id="54">
+                <div class="team" data-team-id="107">S. Nagal</div>
+                <div class="team" data-team-id="108">T. Griekspoor</div>
+            </div>
+
+            <div class="match" data-match-id="55">
+                <div class="team" data-team-id="109">R. Hijikata</div>
+                <div class="team" data-team-id="110">A. Davidovich Fokina</div>
+            </div>
+
+            <div class="match" data-match-id="56">
+                <div class="team" data-team-id="111">K. Jacquet</div>
+                <div class="team" data-team-id="112">G. Dimitrov [9]</div>
+            </div>
+
+            <div class="match" data-match-id="57">
+                <div class="team" data-team-id="113">B. Shelton [13]</div>
+                <div class="team" data-team-id="114">D. Thiem</div>
+            </div>
+
+            <div class="match" data-match-id="58">
+                <div class="team" data-team-id="115">L. Nardi</div>
+                <div class="team" data-team-id="116">R. Bautista Agut</div>
+            </div>
+
+            <div class="match" data-match-id="59">
+                <div class="team" data-team-id="117">A. Shevchenko</div>
+                <div class="team" data-team-id="118">D. Koepfer</div>
+            </div>
+
+            <div class="match" data-match-id="60">
+                <div class="team" data-team-id="119">A. Kovacevic</div>
+                <div class="team" data-team-id="120">F. Tiafoe [20]</div>
+            </div>
+
+            <div class="match" data-match-id="61">
+                <div class="team" data-team-id="121">A. Popyrin [28]</div>
+                <div class="team" data-team-id="122">S. Kwon</div>
+            </div>
+
+            <div class="match" data-match-id="62">
+                <div class="team" data-team-id="123">P. Martinez</div>
+                <div class="team" data-team-id="124">M. Kasnikowski</div>
+            </div>
+
+            <div class="match" data-match-id="63">
+                <div class="team" data-team-id="125">L. Djere</div>
+                <div class="team" data-team-id="126">J. Struff</div>
+            </div>
+
+            <div class="match" data-match-id="64">
+                <div class="team" data-team-id="127">R. Albot</div>
+                <div class="team" data-team-id="128">N. Djokovic [2]</div>
+            </div>
+        </div>
+
+        <div class="round2">
+            <h3>Round 2</h3>
+            <div class="match" data-match-id="1">
+                <div class="team" data-team-id="1"></div>
+                <div class="team" data-team-id="2"></div>
+            </div>
+            <div class="match" data-match-id="2">
+                <div class="team" data-team-id="3"></div>
+                <div class="team" data-team-id="4"></div>
+            </div>
+            <div class="match" data-match-id="3">
+                <div class="team" data-team-id="5"></div>
+                <div class="team" data-team-id="6"></div>
+            </div>
+            <div class="match" data-match-id="4">
+                <div class="team" data-team-id="7"></div>
+                <div class="team" data-team-id="8"></div>
+            </div>
+            <div class="match" data-match-id="5">
+                <div class="team" data-team-id="9"></div>
+                <div class="team" data-team-id="10"></div>
+            </div>
+            <div class="match" data-match-id="6">
+                <div class="team" data-team-id="11"></div>
+                <div class="team" data-team-id="12"></div>
+            </div>
+            <div class="match" data-match-id="7">
+                <div class="team" data-team-id="13"></div>
+                <div class="team" data-team-id="14"></div>
+            </div>
+            <div class="match" data-match-id="8">
+                <div class="team" data-team-id="15"></div>
+                <div class="team" data-team-id="16"></div>
+            </div>
+            <div class="match" data-match-id="9">
+                <div class="team" data-team-id="17"></div>
+                <div class="team" data-team-id="18"></div>
+            </div>
+            <div class="match" data-match-id="10">
+                <div class="team" data-team-id="19"></div>
+                <div class="team" data-team-id="20"></div>
+            </div>
+            <div class="match" data-match-id="11">
+                <div class="team" data-team-id="21"></div>
+                <div class="team" data-team-id="22"></div>
+            </div>
+            <div class="match" data-match-id="12">
+                <div class="team" data-team-id="23"></div>
+                <div class="team" data-team-id="24"></div>
+            </div>
+            <div class="match" data-match-id="13">
+                <div class="team" data-team-id="25"></div>
+                <div class="team" data-team-id="26"></div>
+            </div>
+            <div class="match" data-match-id="14">
+                <div class="team" data-team-id="27"></div>
+                <div class="team" data-team-id="28"></div>
+            </div>
+            <div class="match" data-match-id="15">
+                <div class="team" data-team-id="29"></div>
+                <div class="team" data-team-id="30"></div>
+            </div>
+            <div class="match" data-match-id="16">
+                <div class="team" data-team-id="31"></div>
+                <div class="team" data-team-id="32"></div>
+            </div>
+            <div class="match" data-match-id="17">
+                <div class="team" data-team-id="33"></div>
+                <div class="team" data-team-id="34"></div>
+            </div>
+            <div class="match" data-match-id="18">
+                <div class="team" data-team-id="35"></div>
+                <div class="team" data-team-id="36"></div>
+            </div>
+            <div class="match" data-match-id="19">
+                <div class="team" data-team-id="37"></div>
+                <div class="team" data-team-id="38"></div>
+            </div>
+            <div class="match" data-match-id="20">
+                <div class="team" data-team-id="39"></div>
+                <div class="team" data-team-id="40"></div>
+            </div>
+            <div class="match" data-match-id="21">
+                <div class="team" data-team-id="41"></div>
+                <div class="team" data-team-id="42"></div>
+            </div>
+            <div class="match" data-match-id="22">
+                <div class="team" data-team-id="43"></div>
+                <div class="team" data-team-id="44"></div>
+            </div>
+            <div class="match" data-match-id="23">
+                <div class="team" data-team-id="45"></div>
+                <div class="team" data-team-id="46"></div>
+            </div>
+            <div class="match" data-match-id="24">
+                <div class="team" data-team-id="47"></div>
+                <div class="team" data-team-id="48"></div>
+            </div>
+            <div class="match" data-match-id="25">
+                <div class="team" data-team-id="49"></div>
+                <div class="team" data-team-id="50"></div>
+            </div>
+            <div class="match" data-match-id="26">
+                <div class="team" data-team-id="51"></div>
+                <div class="team" data-team-id="52"></div>
+            </div>
+            <div class="match" data-match-id="27">
+                <div class="team" data-team-id="53"></div>
+                <div class="team" data-team-id="54"></div>
+            </div>
+            <div class="match" data-match-id="28">
+                <div class="team" data-team-id="55"></div>
+                <div class="team" data-team-id="56"></div>
+            </div>
+            <div class="match" data-match-id="29">
+                <div class="team" data-team-id="57"></div>
+                <div class="team" data-team-id="58"></div>
+            </div>
+            <div class="match" data-match-id="30">
+                <div class="team" data-team-id="59"></div>
+                <div class="team" data-team-id="60"></div>
+            </div>
+            <div class="match" data-match-id="31">
+                <div class="team" data-team-id="61"></div>
+                <div class="team" data-team-id="62"></div>
+            </div>
+            <div class="match" data-match-id="32">
+                <div class="team" data-team-id="63"></div>
+                <div class="team" data-team-id="64"></div>
+            </div>
+        </div>
+
+        <div class="round3">
+            <h3>Round3</h3>
+            <div class="match" data-match-id="1">
+                <div class="team" data-team-id="1"></div>
+                <div class="team" data-team-id="2"></div>
+            </div>
+            <div class="match" data-match-id="2">
+                <div class="team" data-team-id="3"></div>
+                <div class="team" data-team-id="4"></div>
+            </div>
+            <div class="match" data-match-id="3">
+                <div class="team" data-team-id="5"></div>
+                <div class="team" data-team-id="6"></div>
+            </div>
+            <div class="match" data-match-id="4">
+                <div class="team" data-team-id="7"></div>
+                <div class="team" data-team-id="8"></div>
+            </div>
+            <div class="match" data-match-id="5">
+                <div class="team" data-team-id="9"></div>
+                <div class="team" data-team-id="10"></div>
+            </div>
+            <div class="match" data-match-id="6">
+                <div class="team" data-team-id="11"></div>
+                <div class="team" data-team-id="12"></div>
+            </div>
+            <div class="match" data-match-id="7">
+                <div class="team" data-team-id="13"></div>
+                <div class="team" data-team-id="14"></div>
+            </div>
+            <div class="match" data-match-id="8">
+                <div class="team" data-team-id="15"></div>
+                <div class="team" data-team-id="16"></div>
+            </div>
+            <div class="match" data-match-id="9">
+                <div class="team" data-team-id="17"></div>
+                <div class="team" data-team-id="18"></div>
+            </div>
+            <div class="match" data-match-id="10">
+                <div class="team" data-team-id="19"></div>
+                <div class="team" data-team-id="20"></div>
+            </div>
+            <div class="match" data-match-id="11">
+                <div class="team" data-team-id="21"></div>
+                <div class="team" data-team-id="22"></div>
+            </div>
+            <div class="match" data-match-id="12">
+                <div class="team" data-team-id="23"></div>
+                <div class="team" data-team-id="24"></div>
+            </div>
+            <div class="match" data-match-id="13">
+                <div class="team" data-team-id="25"></div>
+                <div class="team" data-team-id="26"></div>
+            </div>
+            <div class="match" data-match-id="14">
+                <div class="team" data-team-id="27"></div>
+                <div class="team" data-team-id="28"></div>
+            </div>
+            <div class="match" data-match-id="15">
+                <div class="team" data-team-id="29"></div>
+                <div class="team" data-team-id="30"></div>
+            </div>
+            <div class="match" data-match-id="16">
+                <div class="team" data-team-id="31"></div>
+                <div class="team" data-team-id="32"></div>
+            </div>
+        </div>
+        <a href="nextRounds.html" onclick="saveState()" id="nextRounds">Next Rounds</a>
+    </div>
+    <script src="scripts2.0.js"></script>
+</body>
+</html>
